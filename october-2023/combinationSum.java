@@ -10,7 +10,7 @@ public class combinationSum {
 
     public void dfs(int[] candidates, List<List<Integer>> ans, List<Integer> cur, int target, int index){
         if(target == 0){
-            ans.add(new ArrayList(cur));
+            ans.add(new ArrayList<Integer>(cur));
         }else if (target<0 || index > candidates.length-1){
             return;
         }else{
